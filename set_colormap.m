@@ -29,8 +29,10 @@ switch type
         colormap(flipud(plasma));
     case 'lines'
         crameri('batlow', 5)
+    case 'rainbow'
+        colormap(turbo)
     otherwise
-        error('Invalid color map type')
+        error('Invalid color map type') 
 end
 
 end
